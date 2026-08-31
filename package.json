@@ -1,0 +1,26 @@
+{
+  "name": "desafio_selecao_include",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Trabalho feito para a seleção da include",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jorougumou/Desafio_Selecao_Include.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jorougumou/Desafio_Selecao_Include/issues"
+  },
+  "homepage": "https://github.com/Jorougumou/Desafio_Selecao_Include#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  }
+}
