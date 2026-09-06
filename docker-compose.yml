@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_USER: vini
       POSTGRES_PASSWORD: rafael98
-      POSTGRES_DB: meu_banco
+      POSTGRES_DB: database_veiculos
     ports:
       - "5432:5432"
     volumes:
@@ -15,14 +15,18 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin_ui
+    user: root
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: viniciusrob2006m@gmail.com
       PGADMIN_DEFAULT_PASSWORD: rafael98
     ports:
       - "8080:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
     depends_on:
       - postgres
 
 volumes:
-  postgres_data:  
+  postgres_data:
+  pgadmin_data:
