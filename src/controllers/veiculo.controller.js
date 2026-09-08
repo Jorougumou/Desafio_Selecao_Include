@@ -74,7 +74,7 @@ export class VeiculoController{
 
     static async AlterarVeiculo(req,res){ // UPDATE
         try {
-            const id = req.params.id
+            const id = req.params.id        
             const coluna = req.body.coluna
             const valor = req.body.valor
             if (id == undefined || !coluna || valor == undefined){
@@ -110,6 +110,6 @@ export class VeiculoController{
         } catch (erro) {
             return res.status(500).json({'mensagem':"Erro ao alugar o veiculo", 'erro':erro.message})
             
-        }
+        }   
     }
 }

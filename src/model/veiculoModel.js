@@ -4,7 +4,7 @@ export class VeiculoModel {
     
 
     static async BuscarVeiculos(){    // READ
-        const resultado = await Banco.query("SELECT * FROM VEICULOS ORDER BY ID")
+        const resultado = await Banco.query('SELECT * FROM VEICULOS ORDER BY id')
         return resultado.rows
     }
 

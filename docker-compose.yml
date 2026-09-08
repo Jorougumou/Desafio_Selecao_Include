@@ -6,11 +6,12 @@ services:
     environment:
       POSTGRES_USER: vini
       POSTGRES_PASSWORD: rafael98
-      POSTGRES_DB: database_veiculos
+      POSTGRES_DB: DB_desafio
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
   pgadmin:
     image: dpage/pgadmin4

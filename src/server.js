@@ -1,4 +1,4 @@
-    import app from "./src/api.js"
+    import app from "./api.js"
 
 
 app.listen(3000, () => {
