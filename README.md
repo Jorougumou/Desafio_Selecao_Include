@@ -33,7 +33,7 @@ API REST desenvolvida para o gerenciamento de frota e controle de aluguéis de v
 
 ```bash
 # 1. Clonar o repositório
-git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+git clone [https://github.com/Jorougumou/Desafio_Selecao_Include.git](https://github.com/Jorougumou/Desafio_Selecao_Include.git)
 
 # 2. Entrar na pasta do projeto
 cd nome-do-repositorio
