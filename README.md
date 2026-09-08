@@ -18,14 +18,14 @@ API REST desenvolvida para o gerenciamento de frota e controle de aluguéis de v
 ## Funcionalidades
 
 ### Gestão de Veículos
-* **Cadastrar veículo:** Permite inserir novos veículos na base de dados informando marca, modelo, ano, placa, valor da diária e status de disponibilidade.
-* **Editar veículo:** Permite atualizar as informações cadastradas de um veículo existente.
-* **Remover veículo:** Permite deletar um veículo do sistema.
-* **Listar todos os veículos:** Retorna a lista completa de todos os veículos cadastrados.
-* **Buscar veículo específico:** Permite consultar os detalhes de um veículo filtrando por ID ou placa.
+* **Cadastrar veículo:** Adiciona novos veiculos para a tabela de veiculos
+* **Editar veículo:** altera algum atributo de um veiculo (limitado a 1 por vez)
+* **Remover veículo:** Deleta um veiculo da tabela
+* **Listar todos os veículos:** Busca todos os veiculos
+* **Buscar veículo específico:** Busca todos os veiculos baseando-se em uma condição
 
 ### Gestão de Aluguéis
-* **Alugar veículo:** Permite alterar o status do veículo para "alugado" e registrar os dados da locação (cliente, data de início e data de término).
+* **Alugar veículo:** aluga um veiculo e cria um registro do servico na tabela de serviços
 
 ---
 
@@ -38,7 +38,7 @@ git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://githu
 # 2. Entrar na pasta do projeto
 cd nome-do-repositorio
 
-# 3. Subir os contêineres do PostgreSQL e pgAdmin (o banco e tabelas são criados automaticamente via docker/init.sql)
+# 3. Subir os contêineres do PostgreSQL e pgAdmin (o banco e a tabela são criadas pelo initsql la em docker)
 docker-compose up -d
 
 # 4. Instalar as dependências do Node.js
